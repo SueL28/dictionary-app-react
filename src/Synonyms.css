@@ -1,0 +1,7 @@
+.Synonyms{
+    display: block;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    list-style-type: none;
+    max-width: 800px;
+}

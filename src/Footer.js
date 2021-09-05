@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <a
-        href="https://github.com/SueL28/react-basic-dictionary"
+        href="https://github.com/SueL28/dictionary-app-react"
         target="_blank"
         rel="noreferrer"
       >

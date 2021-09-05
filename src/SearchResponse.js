@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchResponse.css"
+import Synonyms from "./Synonyms.js"
 import tempImage from "./temp-image.png"
 
 export default function SearchResponse(props){
@@ -31,11 +32,9 @@ export default function SearchResponse(props){
                     <p className="response">{props.data.meanings[0].definitions[0].definition}</p>
                 </div>
                 <div className="similar-words">
-                    <h4 className="search-headings">Similar Words</h4>
-    
-                    <p className="response synonyms">
-                         {props.data.meanings[0].definitions[0].synonyms[0]}, {props.data.meanings[0].definitions[0].synonyms[1]}, {props.data.meanings[0].definitions[0].synonyms[2]}
-                    </p>
+
+                    <Synonyms synonyms={props.data.meanings[0].definitions[0].synonyms}/> 
+                        
                 </div>
                 <div className="origin">
                     <h4 className="search-headings">Origin</h4>
