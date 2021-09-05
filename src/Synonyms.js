@@ -6,15 +6,15 @@ export default function Synonyms(props){
 
     if (props.synonyms){
         return(
-            <div>
+            <div className="Synonyms">
             <h4 className="search-headings">Synonyms</h4>
             <p className="synonyms-group">
                 <div className="container">
                     <div className="row">
-                            <ul className="Synonyms">
+                            <ul className="synonyms-word">
                         {props.synonyms.map(function (synonyms,index){
                             return(
-                            <div className="col-sm-2">
+                            <div className="col-sm-4">
                                 <li key={index}>
                                 {synonyms}
                                 </li>

@@ -1,7 +1,7 @@
-.Synonyms{
+
+.Synonyms .synonyms-word{
+    font-size: 14pt;
     display: block;
-    margin: 0 auto;
-    justify-content: space-evenly;
     list-style-type: none;
     max-width: 800px;
 }
