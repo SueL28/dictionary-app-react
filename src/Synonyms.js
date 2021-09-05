@@ -8,7 +8,7 @@ export default function Synonyms(props){
         return(
             <div className="Synonyms">
             <h4 className="search-headings">Synonyms</h4>
-            <p className="synonyms-group">
+            <div className="synonyms-groudiv">
                 <div className="container">
                     <div className="row">
                             <ul className="synonyms-word">
@@ -25,7 +25,7 @@ export default function Synonyms(props){
 
                     </div>
                 </div>
-            </p>
+            </div>
             </div>
                 
         );

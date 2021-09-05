@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchResponse.css"
 import Synonyms from "./Synonyms.js"
+
 import tempImage from "./temp-image.png"
 
 export default function SearchResponse(props){
@@ -19,7 +20,7 @@ export default function SearchResponse(props){
                             <span className="text-capitalize word-type">{props.data.meanings[0].partOfSpeech}</span>
                         </div>
                         <div className="col-sm-5">
-                            <span className="pronunciation">Pronunciation: {props.data.phonetic}</span>
+                            <span className="pronunciation"><a href={props.data.phonetics[0].audio} target="_blank"><button>🔊</button></a> {props.data.phonetic}</span>
                         </div>
                     </div>
                 
