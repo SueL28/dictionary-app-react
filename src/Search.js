@@ -23,7 +23,6 @@ export default function Search (){
     }
 
     function getImages(response){
-        console.log(response.data.photos)
         setPhotos(response.data.photos)
     }
 

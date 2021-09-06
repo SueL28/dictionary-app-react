@@ -70,22 +70,15 @@
     font-weight: 600;
 }
 
-.Search-Response  .response{
+.Search-Response  .definition-response{
     font-size: 15pt;
     color: var(--text-colour);
 }
 
-
-.Search-Response .example-sentence{
-    font-size: 15pt;
-    font-style: italic;
-    opacity: 0.75;
-    color: var(--text-colour);
-}
-
-.Search-Response .example-sentence:first-letter{
+.Search-Response  .definition-response:first-letter{
     text-transform: uppercase;
 }
+
 
 .Search-Response .origin{
     display: block;

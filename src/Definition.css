@@ -1,0 +1,28 @@
+.Defintions-Container .definition-type{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.Defintions-Container .definition-type:first-letter{
+    text-transform: capitalize;
+}
+
+.Defintions-Container .definition-defined{
+    font-size: 14pt;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.Defintions-Container .definition-defined:first-letter{
+    text-transform: capitalize;
+}
+
+.Defintions-Container .definition-example{
+    opacity: 0.75;
+    margin-top: 7px;
+    font-size: 14pt;
+}
+
+.Defintions-Container .definition-example:first-letter{
+    text-transform: capitalize;
+}

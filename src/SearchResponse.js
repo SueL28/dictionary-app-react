@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchResponse.css"
 import Synonyms from "./Synonyms.js"
+import Definition from "./Definition";
 
 export default function SearchResponse(props){
 
@@ -26,9 +27,15 @@ export default function SearchResponse(props){
                 </div>
     
                 <div className="definition">
-    
-                    <p className="response">{props.data.meanings[0].definitions[0].definition}</p>
-                    <p className="example-sentence">{props.data.meanings[0].definitions[0].example}</p>
+
+                   <span className="definition-response"> 
+                   {props.data.meanings.map(function(definition, index){
+                        return (
+                            <div className="definition-response" key={index}>
+                               <Definition definition={definition} />
+                            </div>);
+                    })}
+                    </span>
                 </div>
                 <div className="similar-words">
 
