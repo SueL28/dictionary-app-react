@@ -1,0 +1,23 @@
+.Photos{
+    
+    background-color: rgba(203, 228, 252, 0.397);
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+
+
+.Photos .photo{
+    max-width: 280px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.Photos .photo-spacing{
+    margin: 20px;
+}

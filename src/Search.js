@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import "./Search.css"
 import axios from "axios";
 import SearchResponse from "./SearchResponse";
+import SearchedImages from "./SearchedImages";
 
 
 export default function Search (){
     let [keyword, setKeyword] = useState("");
     let [definition, setDefintion] = useState("");
     let [searched, setSearched]= useState(false);
+    let [photo, setPhotos] = useState("");
 
 
     function getDefinition(response){
@@ -20,12 +22,22 @@ export default function Search (){
         setKeyword(submit.target.value);
     }
 
+    function getImages(response){
+        console.log(response.data.photos)
+        setPhotos(response.data.photos)
+    }
+
     function searchSubmit(event){
         event.preventDefault();
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
         axios.get(apiUrl).then(getDefinition);
 
         //documentation for api https://dictionaryapi.dev/
+
+        let pexelsApiKey =`563492ad6f91700001000001402cc865227548e5990ed4a4988c48fe`
+        let pexelsUrl =`https://api.pexels.com/v1/search?query=${keyword}&per_page=9`
+        const headers = {"Authorization": `Bearer ${pexelsApiKey}`}
+        axios.get(pexelsUrl, {headers: headers}).then(getImages);
     }
 
     if (searched){
@@ -43,6 +55,8 @@ export default function Search (){
             </div>
 
                 <SearchResponse data={definition}/>
+
+                <SearchedImages data={photo} />
 
             </div>
         );

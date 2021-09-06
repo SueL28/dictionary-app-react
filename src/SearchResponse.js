@@ -2,9 +2,6 @@ import React from "react";
 import "./SearchResponse.css"
 import Synonyms from "./Synonyms.js"
 
-
-import tempImage from "./temp-image.png"
-
 export default function SearchResponse(props){
 
 
