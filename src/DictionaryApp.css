@@ -1,3 +1,10 @@
+:root{
+    --primary-colour: rgb(14, 73, 128);
+    --secondary-colour: rgba(140, 182, 221, 0.397);
+    --h1-font: 'Slabo 27px', serif;
+  }
+  
+
 .Dictionary-App{
     padding-top: 80px;
 }
@@ -5,4 +12,7 @@
 .Dictionary-App h1{
     font-size: 40pt;
     font-style: bolder;
+    font-family: var(--h1-font);
+    font-weight: 600;
+    letter-spacing: 2px;
 }

@@ -1,23 +1,63 @@
+:root{
+    --primary-colour: rgb(14, 73, 128);
+    --secondary-colour: rgba(203, 228, 252, 0.397);
+    --text-colour: rgb(10, 10, 56);
+    --headings-text: 'Dosis', sans-serif;
+    --body-text: 'News Cycle', sans-serif;
+  }
+  
+
 .Search-Response{
     display: block;
     margin: 0 auto;
     text-align: left;
-    max-width: 800px;
+    background-color: rgba(203, 228, 252, 0.397);
+    max-width: 1000px;
     margin-top: 35px;
+    padding: 50px;
+    border-radius: 12px;
+    font-family: var(--headings-text);
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .Search-Response .word{
     font-size: 30pt;
     font-weight: 700;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-family: var(--body-text);
+    
 }
 
 .Search-Response .word-type{
     font-size: 16pt;
     font-style: italic;
+    color: var(--text-colour);
+}
+
+.Search-Response .definition{
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.Search-Response .phonetic-button{
+    border-radius: 7px;
+    transition: all 150ms ease-in-out;
+    background-color: rgba(109, 46, 109, 0.616);
+}
+
+.Search-Response .phonetic-button:hover{
+    background-color: rgba(148, 113, 148, 0.616);;
 }
 
 .Search-Response .pronunciation{
     font-size: 16pt;
+    opacity: 0.80;
+    color: var(--text-colour);
 }
 
 .Search-Response .definition .response:first-letter{
@@ -26,20 +66,39 @@
 
 .Search-Response .search-headings{
     margin-top: 25px;
+    font-size: 20pt;
+    font-weight: 600;
 }
 
 .Search-Response  .response{
     font-size: 15pt;
+    color: var(--text-colour);
 }
 
-.Search-Response .synonyms{
-    word-spacing: 4px;
-}
 
 .Search-Response .example-sentence{
     font-size: 15pt;
+    font-style: italic;
+    opacity: 0.75;
+    color: var(--text-colour);
 }
 
 .Search-Response .example-sentence:first-letter{
     text-transform: uppercase;
 }
+
+.Search-Response .origin{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.Search-Response .origin-response{
+    font-size: 14pt;
+    color: var(--text-colour);
+}
+
+.Search-Response .origin-response:first-letter{
+    text-transform: capitalize;
+}
+

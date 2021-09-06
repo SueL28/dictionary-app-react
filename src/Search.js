@@ -31,19 +31,25 @@ export default function Search (){
     if (searched){
         
         return(
+            <div className="search-container">
+
             <div className="Search">
+                
                 <form onSubmit={searchSubmit}>
                     <input type="search" placeholder="Search to Define Word" className="search-bar" autoFocus={true} onChange={searchedWord}/>
                     <input type="submit" value="🔎" className="search-button"/>
                 </form>
     
+            </div>
+
                 <SearchResponse data={definition}/>
-    
+
             </div>
         );
     } else {
         return(
             <div className="Search">
+                <h4 className="search-heading">Search for a Word</h4>
                 <form onSubmit={searchSubmit}>
                     <input type="search" placeholder="Search to Define Word" className="search-bar" autoFocus={true} onChange={searchedWord}/>
                     <input type="submit" value="🔎" className="search-button"/>

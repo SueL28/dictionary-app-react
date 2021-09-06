@@ -8,19 +8,19 @@ export default function Synonyms(props){
         return(
             <div className="Synonyms">
             <h4 className="search-headings">Synonyms</h4>
-            <div className="synonyms-groudiv">
+            <div className="synonyms-grouping">
                 <div className="container">
                     <div className="row">
                             <ul className="synonyms-word">
-                        {props.synonyms.map(function (synonyms,index){
-                            return(
-                            <div className="col-sm-4">
-                                <li key={index}>
-                                {synonyms}
-                                </li>
-                            </div>
-                                    );
-                                })}
+                                {props.synonyms.map(function (synonyms,index){
+                                    return(
+                                    
+                                        <li key={index}>
+                                        {synonyms}
+                                        </li>
+                                    
+                                            );
+                                        })}
                             </ul>
 
                     </div>

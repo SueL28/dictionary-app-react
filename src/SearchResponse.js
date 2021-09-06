@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchResponse.css"
 import Synonyms from "./Synonyms.js"
 
+
 import tempImage from "./temp-image.png"
 
 export default function SearchResponse(props){
@@ -20,7 +21,7 @@ export default function SearchResponse(props){
                             <span className="text-capitalize word-type">{props.data.meanings[0].partOfSpeech}</span>
                         </div>
                         <div className="col-sm-5">
-                            <span className="pronunciation"><a href={props.data.phonetics[0].audio} target="_blank"><button>🔊</button></a> {props.data.phonetic}</span>
+                            <span className="pronunciation"><a href={props.data.phonetics[0].audio} target="_blank" rel="noreferrer"><button className="phonetic-button">🔊</button></a> {props.data.phonetic}</span>
                         </div>
                     </div>
                 
@@ -28,9 +29,9 @@ export default function SearchResponse(props){
                 </div>
     
                 <div className="definition">
-                    <h4 className="search-headings">Definition</h4>
     
                     <p className="response">{props.data.meanings[0].definitions[0].definition}</p>
+                    <p className="example-sentence">{props.data.meanings[0].definitions[0].example}</p>
                 </div>
                 <div className="similar-words">
 
@@ -40,16 +41,9 @@ export default function SearchResponse(props){
                 <div className="origin">
                     <h4 className="search-headings">Origin</h4>
     
-                    <p className="response">{props.data.origin}</p>
+                    <p className="origin-response">{props.data.origin}</p>
                 </div>
-                <div className="example">
-                    <h4 className="search-headings text-capitalize">{props.data.word} used in an Example</h4>
-                    <p className="example-sentence">{props.data.meanings[0].definitions[0].example}</p>
-    
-                    
-    
-                    
-                </div>
+
             </div>
         );
  

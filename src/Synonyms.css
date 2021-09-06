@@ -1,3 +1,9 @@
+:root{
+    --primary-colour: rgb(14, 73, 128);
+    --secondary-colour: rgba(140, 182, 221, 0.397);
+    --text-colour: rgb(10, 10, 56);
+  }
+  
 
 .Synonyms{
     display: block;
@@ -5,9 +11,17 @@
     max-width: 800px;
 }
 
-.Synonyms .synonyms-word{
-    font-size: 14pt;
-    display: block;
+.Synonyms li{
+    font-size: 13pt;
+    display: inline-block;
+    margin-right: 15px;
     list-style-type: none;
+    
 
+}
+
+.Synonyms .synonyms-word{
+    line-height: 1;
+    padding-left: 0;
+    color: var(--text-colour);
 }
