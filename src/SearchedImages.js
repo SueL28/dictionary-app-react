@@ -22,7 +22,7 @@ export default function SearchedImages(props){
                 </div>
             </div>
         );
-    } else {
+    } else { 
         return null;
     }
     }
