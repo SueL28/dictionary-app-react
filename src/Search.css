@@ -43,3 +43,54 @@
 .Search .search-button:hover{
     background-color: rgba(148, 113, 148, 0.616);
 }
+
+
+/* WORD OF THE DAY STYLE */
+.WordOfTheDay{
+    text-align: center;
+    background-color: rgba(101, 153, 201, 0.397);
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.wordDayHeading{
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 28pt;
+    font-style: italic;
+
+}
+
+.wordOfDay{
+    font-size: 25pt;
+    margin-top: 20px;
+    font-family: var(--body-font);
+    font-weight: 900;
+    
+    color: rgb(18, 55, 88);
+}
+
+.wordOfDay::first-letter{
+    text-transform: capitalize;
+}
+
+.wordDayDefintion{
+    font-size: 20pt;
+    margin-top: 20px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    color: rgb(9, 30, 49);
+
+}
+
+.wordExample{
+    font-size: 20pt;
+    font-family: var(--body-font);
+    font-weight: 500;
+    color: rgb(9, 30, 49);
+    opacity: 0.75;
+}
