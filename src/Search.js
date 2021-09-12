@@ -33,7 +33,7 @@ export default function Search (){
 
         //documentation for api https://dictionaryapi.dev/
 
-        let pexelsApiKey =`563492ad6f91700001000001402cc865227548e5990ed4a4988c48fe`
+        let pexelsApiKey=`563492ad6f91700001000001402cc865227548e5990ed4a4988c48fe`
         let pexelsUrl =`https://api.pexels.com/v1/search?query=${keyword}&per_page=9`
         const headers = {"Authorization": `Bearer ${pexelsApiKey}`}
         axios.get(pexelsUrl, {headers: headers}).then(getImages);
